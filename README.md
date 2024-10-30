@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Quick Notes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quick Notes is a **React-based note-taking application** designed to keep track of various types of notes such as work tasks, project plans, and meeting agendas. This app showcases the integration of advanced React features, Material UI styling, and local storage persistence.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add, Edit, and Delete Notes**: Easily manage notes with title and content.
+- **Local Storage**: Automatically saves and loads notes for persistence across sessions.
+- **Responsive Design**: Built with Material UI for a clean and responsive user interface.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Demo Screenshot](./assets/demo.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation and Setup
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/SamsonNg00/quick-notes.git
+   cd quick-notes
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Run the App**:
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   yarn start
+   ```
 
-### `npm run eject`
+   The app will open in your browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Adding a Note**: Enter a title and content, then click **Save**.
+- **Editing a Note**: Click **Edit** on any note, make changes, and save.
+- **Deleting a Note**: Click **Delete** to remove a note.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Sample Data for Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can use the following JSON data for testing in Local Storage under the key `notes`:
 
-## Learn More
+```json
+[
+  {
+    "id": 1730264318949,
+    "title": "Weekly Goals",
+    "content": "1. Finish quarterly report\n2. Prepare presentation for client meeting\n3. Review codebase for updates"
+  },
+  {
+    "id": 1730264318950,
+    "title": "Project X - Action Items",
+    "content": "1. Research competitor features\n2. Complete initial wireframes\n3. Set up team meeting for review"
+  }
+]
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+/src
+ ├── /components
+ │   ├── NotesList.js      # Renders the list of notes
+ │   ├── NoteEditor.js     # Editor for adding and editing notes
+ │   └── NoteCard.js       # Individual note display with edit and delete options
+ ├── App.js                # Main application component
+ └── index.js              # Entry point for React
+```
 
-### Code Splitting
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React**: Frontend library for building the user interface.
+- **Material UI**: UI framework for styling and responsive design.
+- **Local Storage**: Browser API for data persistence.
+- **Vite**: Fast development build tool.
 
-### Analyzing the Bundle Size
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are welcome! If you’d like to improve or add new features:
 
-### Making a Progressive Web App
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to your branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contact
+For any questions, feedback, or suggestions, feel free to reach out:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub: SamsonNg00
+Email: samsonnguyen00@gmail.com
