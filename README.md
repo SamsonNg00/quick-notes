@@ -8,9 +8,22 @@ Quick Notes is a **React-based note-taking application** designed to keep track 
 - **Local Storage**: Automatically saves and loads notes for persistence across sessions.
 - **Responsive Design**: Built with Material UI for a clean and responsive user interface.
 
-## Demo
+## Demo images
+1. Add Notes.
 
-![Demo Screenshot](./assets/demo.png)
+![demo01](https://github.com/user-attachments/assets/7def645d-9580-4dd3-b4fe-2359289318cd)
+
+2. Reload Local Storage After added notes.
+
+![demo02](https://github.com/user-attachments/assets/44b0469d-00c8-40e5-a085-d05d9c5f7d52)
+
+3. Edit and Delete notes.
+
+![demo03](https://github.com/user-attachments/assets/4d160ad5-c69d-46a2-bac4-1012e3555664)
+
+4. Reload Local Storage After Edit or Delete notes.
+
+![demo04](https://github.com/user-attachments/assets/55ec340a-4a25-4d16-9481-71bf40970a59)
 
 ## Installation and Setup
 
