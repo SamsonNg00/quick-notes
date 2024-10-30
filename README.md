@@ -108,5 +108,5 @@ This project is licensed under the MIT License.
 ## Contact
 For any questions, feedback, or suggestions, feel free to reach out:
 
-GitHub: SamsonNg00
-Email: samsonnguyen00@gmail.com
+**GitHub**: SamsonNg00
+**Email**: samsonnguyen00@gmail.com
